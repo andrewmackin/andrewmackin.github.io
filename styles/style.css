@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+body {
+  background-color: #051c2c;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 101vh;
+}
+
+a {
+  color: #0D72E9;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  margin: 0 auto;
+  width: 900px;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.propic {
+  border-radius: 50%;
+  max-height: 300px;
+}
+
+.em {
+  font-weight: bold;
+}
+
+.side-bar {
+  width: 160px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 88%;
+  
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+}
+
+nav li a:hover {
+  color: #0D72E9;
+}
+
+.main-content {
+  margin-left: 0px;
+  width: 900px;
+}
+
+.active {
+  color: #0D72E9; 
+  font-weight: 600;
+}
+
+@media(prefers-reduced-motion: no-preference) {
+  .hidden {
+    transition: all 1s;
+  }
+}
