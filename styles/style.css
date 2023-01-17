@@ -124,3 +124,9 @@ nav li a:hover {
     transition: all 1s;
   }
 }
+
+@media (max-width: 750px) {
+  .projects {
+    flex-wrap: wrap;
+  }
+}
